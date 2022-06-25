@@ -32,8 +32,6 @@
     <!-- Navigation -->
     <nav id="myNav">
 
-
-
       <div class="menu">
         <ul class="navlinks">
           <!-- flexbox -->
@@ -56,10 +54,8 @@
         </ul>
       </div>
 
-
       <label id="burger" for="toggle">&#9776;</label>
       <input type="checkbox" id="toggle" />
-
 
       <div id="burgermenu" class="burgermenu" style="display: none;">
           <a class="linkb" href="#section1">START</a>
@@ -67,8 +63,6 @@
           <a class="linkb" href="#section4">MITMACHEN</a>
           <a class="linkb" href="#section5">FAQ</a>
       </div>
-
-
 
     </nav>
     <div class="social">
@@ -90,7 +84,6 @@
 
   <!-- MAIN PART -->
   <main>
-
     <!-- SECTION 1 -->
     <section id="section1">
       <div class="page1">
@@ -112,7 +105,6 @@
             }
             echo "</div>";
             ?>
-
           </div>
         </div>
       </div>
@@ -122,9 +114,6 @@
     <section id="section2">
       <div class="page2">
         <div class="content-box">
-
-
-
           <div class="textbox">
             <h2>Ziele</h2>
             <p class="textabschnitt2">
@@ -144,7 +133,6 @@
             <input class="submit" type="button" onclick="location.href='#section4';" value="Mach mit!" />
 
           </div>
-
           <div class="textboxplaceholder2">
             <!-- textbox um Seite zu teilen -->
           </div>
@@ -156,11 +144,9 @@
     <section id="section4">
       <div class="page4">
         <div class="content-box">
-
           <div class="textboxplaceholder">
             <!-- textbox um Seite zu teilen -->
           </div>
-
           <div class="textbox2">
             <h2>Dein #sofasaufen Moment</h2>
             <p class="textabschnitt">
@@ -189,7 +175,6 @@
               </div>
             </form>
             <br>
-
             <div class="join">
               <h2>Kommt auf unseren Discord Server</h2>
               <p class="textabschnitt">
@@ -207,13 +192,11 @@
       <div class="page5">
         <div class="content-box">
           <div class="textbox">
-
             <!-- Akkordion -->
             <div class="container">
               <!-- Container -->
               <h2>FAQ</h2>
               <p class="textabschnitt">Hier werden die am häufig gestelltesten Fragen beantwortet.</p>
-
               <button class="accordion">Wie kann ich mitmachen?</button> <!-- Frage -->
               <div class="accordion-content">
                 <p>
@@ -221,7 +204,7 @@
                   Hier der Link zu unserem Discord: <a href="https://discord.gg/HUJQFQ">#sofasaufen auf Discord</a> 
                 </p>
               </div>
-
+              
               <button class="accordion">Kann man euch unterstützen?</button> <!-- Frage -->
               <div class="accordion-content">
                 <p>
@@ -254,17 +237,14 @@
                     </div>
                   </div>
                 </form>
-
               </div>
             </div>
           </div>
-
+          
           <div class="textboxplaceholder2"></div> <!-- textbox um Seite zu teilen -->
         </div>
-
       </div>
     </section>
-
   </main>
   <!-- END MAIN PART -->
 
