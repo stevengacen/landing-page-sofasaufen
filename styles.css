@@ -80,14 +80,51 @@ nav ul li {
 
 .burgermenu {
     display: none;
-    margin: 0 0 0 0;
 }
 
 .burgermenu a {
     clear: right;
     text-decoration: none;
-    color: black;
-    margin: 0;
+    float: right;
+    width: 100%;
+    text-align: end;
+    padding-right: 50px;
+}
+
+.arrowright {
+    right: 0;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 35px solid transparent;
+    border-bottom: 35px solid transparent;
+    border-right: 0px solid;
+    transition: all 300ms;
+    cursor: pointer;
+}
+
+.linkb:hover .arrowright {
+    right: 0;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 35px solid transparent;
+    border-bottom: 35px solid transparent;
+    border-right: 30px solid white;
+    transition: 300ms;
+    cursor: pointer;
+}
+
+.linkb:active .arrowright {
+    right: 0;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 35px solid transparent;
+    border-bottom: 35px solid transparent;
+    border-right: 45px solid #333333;
+    transition: 200ms;
+    cursor: pointer;
 }
 
 #burger {
@@ -144,17 +181,23 @@ nav ul li:active~.arrow-down {
     transition: border-top 100ms;
 }
 
+.linkb {
+    transition: 300ms;
+}
+
 .linkb:hover {
     color: white;
     background-color: rgb(255, 23, 124);
     transition: 300ms;
+    padding-right: 100px;
 }
 
 .linkb:active {
     color: black;
     background-color: white;
-    opacity: 0.1;
-    transition: 500ms;
+    opacity: 1;
+    padding-right: 300px;
+    transition: 200ms;
 }
 
 .linkbox {
@@ -212,13 +255,12 @@ nav ul li:active~.arrow-down {
 
 .icons_white {
     background-color: rgb(255, 23, 78, 0.7);
-    border-radius: 11px;
+    border-radius: 12px;
 }
 
 .ulicon .icons:hover {
     opacity: 0;
     transition: 500ms;
-    border-radius: 20px;
 }
 
 #section1,
@@ -294,6 +336,7 @@ nav ul li:active~.arrow-down {
     box-shadow: 0px 6px 15px 5px rgba(0, 0, 0, 0.68);
     border: 5px solid white;
     border-radius: 0 0 5px 5px;
+    background-image: linear-gradient(to bottom right, rgb(255, 23, 78, 0.6), #009affff);
 }
 
 .page1 .content-box {
@@ -366,7 +409,7 @@ nav ul li:active~.arrow-down {
 /* SLIDER -->*/
 
 .slider-container {
-    background-color: #333333;
+    background-color: black;
     z-index: 1;
     position: relative;
     display: flex;
@@ -380,11 +423,19 @@ nav ul li:active~.arrow-down {
 }
 
 #slide {
+    overflow: hidden;
     justify-content: space-around;
     align-content: space-around;
     width: 100%;
+    height: 100%;
     padding: 0px;
     opacity: 1;
+}
+
+.imagesizer {
+    max-width: 90%;
+    height: auto;
+    margin: auto;
 }
 
 .animationSlide {
@@ -602,6 +653,7 @@ input[type="radio"]:checked+label span {
     left: 50%;
     transform: translateX(-50%);
     opacity: 0.2;
+    transition: 600ms;
 }
 
 #backicon:hover {
@@ -788,7 +840,7 @@ button.accordion.is-open {
 
 .accordion-content.show {
     border-left: 4px solid rgb(255, 23, 78, 0.7);
-    height: 150px;
+     height: 150px;
     transition: all 0.5s ease-in-out;
 }
 
@@ -977,7 +1029,7 @@ button.accordion.is-open {
     }
 }
 
-@media (max-width: 850px) {
+@media (max-width: 900px) {
     nav {
         border-bottom: 1px solid #EAEAEB;
         text-align: right;
@@ -1042,5 +1094,49 @@ button.accordion.is-open {
     button.accordion {
         font-size: 0.8rem;
         transition: all 300ms;
+    }
+}
+
+@media (max-height: 710px) {
+    #toggle:checked+.burgermenu {
+        line-height: 50px;
+        transition: 200ms;
+    }
+    .arrowright {
+        border-top: 25px solid transparent;
+        border-bottom: 25px solid transparent;
+        border-right: 0px solid;
+    }
+    .linkb:hover .arrowright {
+        border-top: 25px solid transparent;
+        border-bottom: 25px solid transparent;
+        border-right: 20px solid white;
+    }
+    .linkb:active .arrowright {
+        border-top: 25px solid transparent;
+        border-bottom: 25px solid transparent;
+        border-right: 35px solid #333333;
+    }
+}
+
+@media (max-height: 530px) {
+    #toggle:checked+.burgermenu {
+        line-height: 30px;
+        transition: 200ms;
+    }
+    .arrowright {
+        border-top: 15px solid transparent;
+        border-bottom: 15px solid transparent;
+        border-right: 0px solid;
+    }
+    .linkb:hover .arrowright {
+        border-top: 15px solid transparent;
+        border-bottom: 15px solid transparent;
+        border-right: 10px solid white;
+    }
+    .linkb:active .arrowright {
+        border-top: 15px solid transparent;
+        border-bottom: 15px solid transparent;
+        border-right: 25px solid #333333;
     }
 }

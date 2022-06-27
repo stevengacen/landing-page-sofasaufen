@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 
 <head>
 
@@ -10,7 +10,6 @@
   <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
   <link href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Dosis:300,400,700,800" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet"> <!-- main font -->
 
   <link rel="stylesheet" href="styles.css">
@@ -43,11 +42,11 @@
             <div class="arrow-down"></div> <!-- Pfeil über jedem Link -->
           </div>
           <div class="linkbox">
-            <li><a class="link" href="#section2">Ziele</a></li>
+            <li><a class="link" href="#section2">Goals</a></li>
             <div class="arrow-down"></div>
           </div>
           <div class="linkbox">
-            <li><a class="link" href="#section4">mitmachen</a></li>
+            <li><a class="link" href="#section4">participate</a></li>
             <div class="arrow-down"></div>
           </div>
           <div class="linkbox">
@@ -64,15 +63,14 @@
 
       <div id="burgermenu" class="burgermenu" style="display: none;">
           <a class="linkb" href="#section1"><span class="arrowright"></span> START </a>
-          <a class="linkb" href="#section2"><span class="arrowright"></span> ZIELE </a>
-          <a class="linkb" href="#section4"><span class="arrowright"></span> MITMACHEN </a>
+          <a class="linkb" href="#section2"><span class="arrowright"></span> GOALS </a>
+          <a class="linkb" href="#section4"><span class="arrowright"></span> PARTICIPATE </a>
           <a class="linkb" href="#section5"><span class="arrowright"></span> FAQ </a>
           <a class="linkb" href="https://www.instagram.com"><span class="arrowright"></span> INSTAGRAM </a>
           <a class="linkb" href="https://www.twitter.com"><span class="arrowright"></span> TWITTER </a>
           <a class="linkb" href="https://discord.gg/HUJQFQ"><span class="arrowright"></span> DISCORD </a>
           <a class="linkb" href="index.php"><span class="arrowright"></span> DE </a>
           <a class="linkb" href="index_en.php"><span class="arrowright"></span> EN </a>
-      </div>
       </div>
 
 
@@ -111,7 +109,7 @@
             <button type="next" name="next" id="next" onclick="changeNext()"><i class="fa fa-angle-double-right"></i></button>
             <div class=imagesizer>
             <img id="slide" name="slide" />
-            </div>
+</div>
             <!-- php Abschnitt -->
             <?php                                           // Programm zum automatischem Erstellen von radiobuttons.
             $files = scandir('images/slideshow');           // Bezieht sich auf die Bilder im Ordner "images/slideshow"
@@ -139,22 +137,20 @@
 
 
           <div class="textbox">
-            <h2>Ziele</h2>
+            <h2>Goals</h2>
             <p class="textabschnitt2">
-              Mit #sofasaufen versuchen Wir Sicherheit aber auch das alltägliche
-              Leben ein Stück weit wieder zurück zu bringen. <br>
-              In Zeiten von Corona raus zugehen ist unsicher für Dich und deine Mitmenschen <br>
-              Aber auf Spieleabende, Bartouren, Partys und weiteres zu verzichten raubt uns vielleicht
-              irgendwann den Verstand. <br>
+              With #sofasaufen we try to gain back not only security but also our daily habits <br>
+              At the moment for everyone it is not save to go out <br>
+              Avoiding game nights, pub crawlings, partys and many other activities might let us lose our minds soon. <br>
             </p>
-            <h3>Was also tun fragst du dich?</h3>
+            <h3>What can I do?</h3>
 
             <p class="textabschnitt2">
-              Mach mit und sei ein Teil einer stetig wachsenden Community! <br>
-              Bei uns auf dem Discord kannst du dich mit Freunden virtuell treffen und social drinking
-              neu erleben!. <br><br>
+              Join our steadily growing community! <br>
+              On the official #sofasaufen discord server, you can meet your close ones again and experience social drinking in a new way!
+              <br><br>
             </p>
-            <input class="submit" type="button" onclick="location.href='#section4';" value="Mach mit!" />
+            <input class="submit" type="button" onclick="location.href='#section4';" value="Join!" />
 
           </div>
 
@@ -175,38 +171,38 @@
           </div>
 
           <div class="textbox2">
-            <h2>Dein #sofasaufen Moment</h2>
+            <h2>Your #sofasaufen experience</h2>
             <p class="textabschnitt">
-              Seid ein teil unserer bewegung und sendet uns eure coolsten #sofasaufen Momente zu.
-              ladet hier einfach Bilder hoch wie ihr mit euren Freunden social drinking auf unserem Discord genießt.
+              Be a part of the movement and send us your personal #sofasaufen experience.
+              Upload your pictures and let everyone see how much you enjoy social drinking on our discord server.
             </p>
             <br class="abstand">
 
             <!-- FORMULAR FILE UPLOAD -->
-            <form action="index.php" method="post" enctype="multipart/form-data">
+            <form action="index_en.php" method="post" enctype="multipart/form-data">
               <div class="textfields">
                 <div class="nameboxes">
-                  <label for="vorn">Vorname</label>
-                  <input type="text" name="vorn" id="vorn" placeholder="Max">
+                  <label for="vorn">first name</label>
+                  <input type="text" name="vorn" id="vorn" placeholder=" Max">
                 </div>
                 <div class="nameboxes">
-                  <label for="nachn">Nachname</label>
+                  <label for="nachn">name</label>
                   <input type="text" name="nachn" id="nachn" placeholder=" Mustermann">
                 </div>
               </div>
-              <label for="email">E-Mail Adresse</label>
+              <label for="email">e-mail address</label>
               <input type="email" name="email" class="email" placeholder=" placeholder@mail.com">
               <div class="subfile">
-                <input type="file" name="fileToUpload" id="fileToUpload">
-                <input type="submit" value="Bild hochladen" name="submit" class="submit">
+                <input type="file" value="Select file" name="fileToUpload" id="fileToUpload">
+                <input type="submit" value="Upload picture" name="submit" class="submit">
               </div>
             </form>
             <br>
 
             <div class="join">
-              <h2>Kommt auf unseren Discord Server</h2>
+              <h2>Join our discord server</h2>
               <p class="textabschnitt">
-                Ihr seid noch kein Teil unserer Discord Community? Na dann wirds aber Zeit! <br class="abstand">
+                Still not part of the discord community? Then join now! <br class="abstand">
               </p>
               <a href="https://discord.gg/HUJQFQ">JOIN!</a>
             </div>
@@ -225,45 +221,45 @@
             <div class="container">
               <!-- Container -->
               <h2>FAQ</h2>
-              <p class="textabschnitt">Hier werden die am häufig gestelltesten Fragen beantwortet.</p>
+              <p class="textabschnitt">Frequently asked questions will be answered here.</p>
 
-              <button class="accordion">Wie kann ich mitmachen?</button> <!-- Frage -->
+              <button class="accordion">How can i participate?</button> <!-- Frage -->
               <div class="accordion-content">
                 <p>
-                  Komm auf unseren Discord, lade deine Freunde ein und schnappt euch alle ein Getränk eurer Wahl! <br>
-                  Hier der Link zu unserem Discord: <a href="https://discord.gg/HUJQFQ">#sofasaufen auf Discord</a> 
+                  Join the discord, invite your friends and grab your drinks! <br>
+                  Click the link for the discord: <a href="https://discord.gg/HUJQFQ">#sofasaufen on discord</a> 
                 </p>
               </div>
 
-              <button class="accordion">Kann man euch unterstützen?</button> <!-- Frage -->
+              <button class="accordion">Can I support you somehow?</button> <!-- Frage -->
               <div class="accordion-content">
                 <p>
-                  Du unterstützt uns am besten wenn du möglichst vielen deiner Freunde von uns erzählst. <br>
-                  Darüber hinaus kannst du uns deine coolsten #sofasaufen-Momente zuschicken oder einfach unseren hashtag auf social Media verbreiten<br>
-                  Je Größer unsere Initiative #sofasaufen wird, desto sichere bleiben Wir alle!
+                  Best way too support us is to tell everyone about it. <br>
+                  Furthermore you can send us your coolest pictures about #sofasaufen and share the hashtag on social media.<br>
+                  The bigger the Initiative #sofasaufen the saver will be the world!
                 </p>
               </div>
 
-              <button class="accordion">Ist die Teilnahme kostenpflichtig?</button> <!-- Frage -->
+              <button class="accordion">Is it free to join?</button> <!-- Frage -->
               <div class="accordion-content">
                 <p>
-                  Du kannst völlig kostenfrei unserem Discor-Server beitreten, da Discord keine kostenpflichtige Software ist. <br>
-                  Auch unseren hashtag auf social Media zu verbreiten ist kostenlos. <br>
-                  Selbst ein cooles Bild von dir und deinen Freunden zu machen und uns zuschicken kostet dich höchstens 3 Klicks.
+                  It is absolutely free to join our server. It is also free to download discord. <br>
+                  Sharing the social media hashtag is free too. <br>
+                  Sending your coolest pictures about #sofasaufen might cost you a few clicks but not a single penny.
                 </p>
               </div>
 
-              <button class="accordion">Du hast noch Fragen?</button> <!-- Frage -->
+              <button class="accordion">Your question was not answered?</button> <!-- Frage -->
               <div class="accordion-content">
                 <!-- Formular um Frage zu stellen -->
-                <form id="q_area_form" action="index.php" method="post">
+                <form id="q_area_form" action="index_en.php" method="post">
                   <div class="q_area">
-                    <label for="email_text">Deine Frage:</label>
-                    <textarea id="textarea" name="textarea" placeholder=" Stell uns hier deine Fragen..."></textarea><br>
-                    <label for="email_text">E-Mail Adresse:</label>
+                    <label for="email_text">Your question:</label>
+                    <textarea id="textarea" name="textarea" placeholder=" Ask your question here ..."></textarea><br>
+                    <label for="email_text">e-mail address:</label>
                     <div class="q_area2">
                       <input type="email" name="email_text" class="email" placeholder=" placeholder@mail.com">
-                      <input type="submit" class="submit" name="submit_text" value="senden" />
+                      <input type="submit" class="submit" name="submit_text" value="send" />
                     </div>
                   </div>
                 </form>
@@ -283,18 +279,17 @@
 
   <!-- "Zurück hoch-" arrow -->
   <a href="#section1"><img src="images/icons/arrowicon.png" id="backicon" alt="up"></a>
-  
 
   <!-- FOOTER -->
   <footer>
     <div class=footer>
-      <div class="foot_text">
+      <div class="foot_text"> 
         Impressum <br>
         All rights reserved <br>
-        bald steht hier was cooles <br>
+        Soon this text will be great again <br>
       </div>
       <div class="foot_img">
-        <img src="images/sofasaufen_visuals/footerlogo2.png" alt="#sofasaufen_black">
+        <img src="images\sofasaufen_visuals\footerlogo2.png" alt="#sofasaufen_black">
       </div>
     </div>
   </footer>
@@ -314,8 +309,8 @@
     $errors = array();                                                    // Fehler array um weitere Fehler einfach anzuhängen bzw zu entfernen
 
     // Fehlermeldungen als Variablen um sie geschickt einem array zu übergeben
-    $errorstr1 = "-Es wurde keine gültige E-Mail Adresse angegeben.";
-    $errorstr2 = "-Es wurde keine Frage gestellt.";
+    $errorstr1 = "-no valid e-mail address found.";
+    $errorstr2 = "-no question found.";
 
     if (empty($from) || !filter_var($from, FILTER_VALIDATE_EMAIL)) {      // Prüfen ob Absender leer oder ungültig
       $errors[$counter] = $errorstr1;
@@ -330,10 +325,10 @@
 
     if ($sendOk == 1) {                                                   // Sendestatus prüfen
       mail($to, $subject, $msg);
-      echo "<script> alert('Deine Frage wurde an uns versendet')</script>";
+      echo "<script> alert('Your question was submit.')</script>";
     } else {
       $errorsStr = implode("\\n ", $errors);
-      echo "<script> alert('HOPPLA! - Das hat nicht geklappt \\nÜberprüfe folgende Fehlerquellen:{$errorsStr}'); window.location.href = 'index.php#section5' </script>";
+      echo "<script> alert('Oops! - That did not work \\nCheck the following sources of error:\\n {$errorsStr}'); window.location.href = 'index_en.php#section5' </script>";
     }
   }
   ?>
@@ -362,11 +357,11 @@
     $errors = array(); // Error-array um weitere Fehlerquellen einfach einbinden zu können 
 
     // Fehlermeldungen als Variablen um sie geschickt einem array zu übergeben
-    $errorstr1 = "-Die Datei überschreitet eine Größe von 500 kilobyte.";
-    $errorstr2 = "-Die Datei entspricht keines der folgenden Formate: JPG, JPEG, PNG & GIF.";
-    $errorstr3 = "-Es wurde kein Nachname angegeben.";
-    $errorstr4 = "-Es wurde kein Vorname angegeben.";
-    $errorstr5 = "-Es wurde keine gültige E-Mail Adresse angegeben.";
+    $errorstr1 = "-The file exceeds a size of 500 kilobyte.";
+    $errorstr2 = "-The file does not correspond the following formats: JPG, JPEG, PNG & GIF.";
+    $errorstr3 = "-No name was found.";
+    $errorstr4 = "-No first name was found.";
+    $errorstr5 = "-No valid e-mail address was found.";
 
 
     //Checkt die vom User einzutragenden Daten ob sie leer sind
@@ -407,10 +402,10 @@
     // Lädt Datei ggf. hoch und gibt entsprechenden Alert
     if ($sendOk == 1 && $uploadOk == 1 && move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) {
       mail($to, $subject, $msg);
-      echo "<script> alert('GLÜCKWUNSCH! \\nDein persönlicher #sofasaufen Moment wurde erfolgreich hochgeladen! \\n" . basename($_FILES["fileToUpload"]["name"]) . "')</script>";
+      echo "<script> alert('CONGRATS! \\nYour personal #sofasaufen experience was succesfully uploaded! \\n" . basename($_FILES["fileToUpload"]["name"]) . "')</script>";
     } else {
       $errorsStr = implode("\\n ", $errors);
-      echo "<script> alert('HOPPLA! - Das hat nicht geklappt \\nÜberprüfe folgende Fehlerquellen:{$errorsStr}'); window.location.href = 'index.php#section4' </script>";
+      echo "<script> alert('Oops! - That did not work \\nCheck the following sources of error:\\n {$errorsStr}'); window.location.href = 'index_en.php#section4' </script>";
     }
   }
   ?>

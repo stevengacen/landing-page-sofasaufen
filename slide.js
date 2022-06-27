@@ -5,9 +5,9 @@ let imgArray = []; //Bildarray
 
 
 // Bilder Array
-imgArray[0] = 'images/slideshow/social_shaking_header4_mobil.jpg';
-imgArray[1] = 'images/slideshow/istockphoto-965947982-1024x1024.jpg';
-imgArray[2] = 'images/slideshow/gettyimages-868935172-612x612.jpg';
+imgArray[0] = 'images/slideshow/sofasaufen_Moment_Mark.jpg';
+imgArray[1] = 'images/slideshow/sofasaufen_Moment2.jpg';
+imgArray[2] = 'images/slideshow/sofasaufen_Moment_Ruven.jpg';
 
 
 //Erstes Bild beim Laden der Seite direkt initialisieren, sonst 3s grau
